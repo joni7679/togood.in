@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+*::selection {
+    background-color: #000;
+    color: #fff;
+
+}
+
+.nav {
+    width: 100%;
+    padding: 25px;
+    height: 100px;
+    /* background-color: #4b4a4a; */
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav-logo {
+    /* background-color: red; */
+    height: 80px;
+    overflow: hidden;
+}
+
+.nav-logo svg {
+    display: block;
+}
+
+.nav .nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+
+}
+
+.nav .nav-part2 a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #333;
+    margin-right: 30px;
+}
+
+.nav .icons {
+    padding: 10px;
+    background-color: #b7a5a5;
+    border-radius: 30px;
+
+}
+
+.nav .icons i {
+    /* background-color: red; */
+    padding: 13px;
+    font-size: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.banner-section {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    /* background-color: red; */
+    padding: 13vh;
+    font-family: Futura;
+
+}
+
+.banner-section h1 {
+
+    text-transform: uppercase;
+    font-size: 13vw;
+    line-height: 23vh;
+    letter-spacing: -5px;
+}
+
+.video-container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+
+}
+
+.video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play {
+    position: absolute;
+    /* padding: 20px; */
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    text-transform: uppercase;
+    opacity: 0;
+    scale: 0;
+    z-index: 99;
+
+}
+
+.cursor {
+    position: fixed;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #4b4a4a;
+    color: #fff;
+    transform: translate(-50%, -50%) scale(0);
+    cursor: pointer !important;
+
+}
+
+.features {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 2vw;
+
+
+}
+
+.features .elem {
+    height: 100%;
+    width: 30%;
+    position: relative;
+
+}
+
+.shopimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.icon i {
+    cursor: pointer;
+}
+
+.shop-box {
+    width: 300px;
+    height: 50px;
+    background-color: #F5DFCF;
+    border-radius: 13px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.cricle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000;
+}
+
+.shop-elems-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    width: 100%;
+    display: none;
+
+
+}
+
+
+.shop-elems-box img {
+    width: 30%;
+}
+
+/* Additional styles for the hovered-class */
+.shop-elems-box.hovered-class {
+    /* Add your styles for the hovered state here */
+    background-color: #e0e0e0;
+    /* Change background color on hover */
+    border: 2px solid #333;
+    /* Add a border on hover */
+    /* Add other styles as needed */
+}
+
+.bags-elems {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.bags-elem-box {
+    height: 50vh;
+    width: 500px;
+    margin-top: 15px;
+    /* background-color: rgb(197, 191, 191); */
+    position: relative;
+}
+
+.bags-elem-box img {
+    height: 100%;
+}
+
+/* media query code */
+
+@media (max-width:850px) {
+    .features {
+        flex-direction: column;
+    }
+
+    .elem {
+        margin-top: 20px;
+    }
+    .bags-elems {
+        margin-top: 751px;
+    }
+
+
+}
